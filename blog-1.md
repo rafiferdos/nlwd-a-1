@@ -23,3 +23,7 @@ let input: unknown = "Hello";
 if (typeof input === "string") {
   console.log(input.length); // Safe to use now
 }
+```
+
+## Conclusion
+While any is easy to use, it makes your code risky. Using unknown forces you to check your data, which makes your application much more stable and bug-free.
