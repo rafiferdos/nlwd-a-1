@@ -1,4 +1,4 @@
-# Why 'unknown' is Safer Than 'any' in TypeScript
+# Topic 1: Why 'unknown' is Safer Than 'any' in TypeScript
 
 ## Introduction
 In TypeScript, we often face data that we are not sure about. Many developers use the `any` type to handle this, but it creates a "type safety hole." So, in my and other developer's opinion, A better and safer choice is the `unknown` type.
