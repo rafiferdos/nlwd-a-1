@@ -12,7 +12,6 @@ const checkType = (input: StringOrNumber): string =>
   typeof input === 'string' ? 'String' : 'Number'
 
 // Problem 4
-const user = { id: 1, name: 'John Doe', age: 21 }
 const getProperty = <T, K extends keyof T>(obj: T, key: K): T[K] => obj[key]
 
 // Problem 5
@@ -27,11 +26,6 @@ const toggleReadStatus = (obj: Book): Book & { isRead: boolean } => {
     isRead: true
   }
 }
-const myBook = {
-  title: 'TypeScript Guide',
-  author: 'Jane Doe',
-  publishedYear: 2024
-}
 
 // Problem 6
 class Person {
@@ -42,7 +36,6 @@ class Person {
     this.age = age
   }
 }
-
 class Student extends Person {
   grade: string
 
@@ -54,7 +47,6 @@ class Student extends Person {
     return `Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}`
   }
 }
-const student = new Student('Alice', 20, 'A')
 
 //Problem 7
 const getIntersection = (X: number[], Y: number[]): number[] =>
